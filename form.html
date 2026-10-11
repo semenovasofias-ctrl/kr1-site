@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Эпоха Возрождения - формы</title>
+    <style>
+      body {
+        background-color: #e7dacb;
+      }
+
+      a:hover {
+        background-color: #7a5c48;
+        color: white;
+      }
+
+      a.active {
+        background-color: #9f7652;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="index.html"
+          ><img src="im1.jpg" width="30" alt="На главную"
+        /></a>
+      </li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="history.html">История эпохи</a></li>
+      <li><a href="artists.html">Художники</a></li>
+      <li><a href="table.html">Таблица</a></li>
+      <li><a href="artists.html#leonardo">Леонардо да Винчи</a></li>
+      <li><a href="form.html" class="active">Формы</a></li>
+      <li><a href="dom.html">DOM_JS</a></li>
+      <li><a href="latin.html">Кириллица - латиница</a></li>
+      <li><a href="task.html">Алгоритмическая задача</a></li>
+      <li>
+        <a
+          href="https://ru.wikipedia.org/wiki/Эпоха_Возрождения"
+          target="_blank"
+          >Википедия</a
+        >
+      </li>
+    </ul>
+    <hr />
+
+    <h1 id="top">Формы</h1>
+    <p>
+      <a href="#contacts">Оставить контакты</a>
+      <a href="#order">Записаться на экскурсию</a>
+    </p>
+    <h2 id="contacts">Оставьте свои контакты</h2>
+    <form action="https://www.google.com" method="get" target="_blank">
+      <p>
+        Фамилия:<br />
+        <input type="text" name="last_name" />
+      </p>
+      <p>
+        Имя:<br />
+        <input type="text" name="first_name" />
+      </p>
+      <p>
+        Группа:<br />
+        <input type="text" name="group" />
+      </p>
+      <p>
+        Мобильный телефон:<br />
+        <input type="tel" name="phone" placeholder="+7 900 000-00-00" />
+      </p>
+      <p>
+        Электронная почта:<br />
+        <input type="email" name="email" />
+      </p>
+      <p>
+        Дата отправки:<br />
+        <input type="date" name="send_date" />
+      </p>
+      <p>
+        <input type="submit" value="Отправить" />
+        <input type="reset" value="Очистить" />
+      </p>
+    </form>
+    <hr />
+    <h2 id="order">Запись на экскурсию</h2>
+
+    <form action="https://www.google.com" method="get" target="_blank">
+      <p>
+        Ваше имя:<br />
+        <input type="text" name="visitor_name" value="Гость" />
+      </p>
+      <p>
+        Количество человек:<br />
+        <input type="number" name="people_count" min="1" max="20" value="1" />
+      </p>
+      <p>
+        Экскурсия:<br />
+        <input type="radio" name="tour" value="leonardo" /> Леонардо да Винчи<br />
+        <input type="radio" name="tour" value="michelangelo" />
+        Микеланджело<br />
+        <input type="radio" name="tour" value="raphael" /> Рафаэль<br />
+        <input type="radio" name="tour" value="botticelli" /> Боттичелли
+      </p>
+      <p>
+        Дополнительно:<br />
+        <input type="checkbox" name="audio_guide" value="yes" checked />
+        Аудиогид<br />
+        <input type="checkbox" name="catalog" value="yes" /> Каталог выставки<br />
+        <input type="checkbox" name="photo" value="yes" /> Разрешение на
+        фотосъёмку
+      </p>
+      <p>
+        Дата посещения:<br />
+        <input type="date" name="visit_date" value="2026-11-01" />
+      </p>
+      <p>
+        Придумайте пароль для личного кабинета:<br />
+        <input type="password" name="user_password" />
+      </p>
+      <input type="hidden" name="form_source" value="renaissance_site" />
+
+      <p>
+        <input type="submit" value="Записаться" />
+        <input type="reset" value="Сбросить" />
+      </p>
+    </form>
+    <p><a href="#top">К началу</a></p>
+  </body>
+</html>
