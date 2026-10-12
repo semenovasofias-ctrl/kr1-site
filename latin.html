@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Паспорт</title>
+    <style type="text/css">
+      body {
+        background-color: #e7dacb;
+        background-image: url(pasport.png);
+        background-position: 87px 285px;
+        background-repeat: no-repeat;
+      }
+      a:hover {
+        background-color: #7a5c48;
+        color: white;
+      }
+
+      a.active {
+        background-color: #9f7652;
+        color: white;
+      }
+      .place {
+        padding-left: 190px;
+        padding-top: 78px;
+      }
+      .fio {
+        padding-left: 270px;
+        padding-top: 257px;
+      }
+      .name {
+        padding-left: 300px;
+        margin-top: 25px;
+      }
+      .sec_name {
+        padding-left: 270px;
+        padding-top: 5px;
+      }
+      .data_b {
+        padding-left: 260px;
+        padding-top: 5px;
+      }
+      .img {
+        padding-left: 114px;
+        margin-top: -70px;
+      }
+
+      .btn {
+        margin-left: 400px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="index.html"><img src="im1.jpg" width="50" /></a>
+      </li>
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="history.html">История эпохи</a></li>
+      <li><a href="artists.html">Художники</a></li>
+      <li><a href="table.html">Таблица</a></li>
+      <li><a href="artists.html#leonardo">Леонардо да Винчи</a></li>
+      <li><a href="form.html">Формы</a></li>
+      <li><a href="dom.html">DOM_JS</a></li>
+      <li><a href="latin.html">Кириллица - латиница</a></li>
+      <li><a href="task.html">Алгоритмическая задача</a></li>
+      <li>
+        <a
+          href="https://ru.wikipedia.org/wiki/Эпоха_Возрождения"
+          target="_blank"
+          >Википедия</a
+        >
+      </li>
+    </ul>
+    <hr />
+    <div class="place">Королевская канцелярия</div>
+    <div class="fio">да Винчи</div>
+    <div class="name">Леонардо</div>
+    <div class="sec_name">ди сер Пьеро</div>
+    <div class="data_b">
+      Муж &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15.04.1452
+    </div>
+    <div class="img"><img src="im12.jpg" height="130" width="110" /></div>
+    <button class="btn" id="change">Заменить</button>
+  </body>
+
+  <script src="change.js"></script>
+</html>
